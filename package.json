@@ -1,0 +1,38 @@
+{
+  "name": "scottservices-log-node-api",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start-dev": "tsc && concurrently \"tsc -w\" \"node server.js\" ",
+    "lite": "lite-server",
+    "postinstall": "tsc",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w"
+  },
+  "dependencies": {
+    "@types/core-js": "^0.9.34",
+    "@types/jasmine": "^2.5.37",
+    "@types/jquery": "^2.0.33",
+    "@types/lodash": "^4.14.38",
+    "@types/node": "^6.0.46",
+    "azure-storage": "^1.3.2",
+    "body-parser": "^1.15.2",
+    "documentdb": "^1.10.0",
+    "dotenv": "^4.0.0",
+    "express": "^4.14.0",
+    "lodash": "~4.16.6",
+    "moment": "^2.15.2",
+    "moment-duration-format": "^1.3.0",
+    "moment-timezone": "^0.5.7",
+    "multer": "^1.2.0",
+    "node-cache": "^4.1.0",
+    "pushpad": "^0.3.1",
+    "typescript": "^2.0.3"
+  },
+  "devDependencies": {
+    "concurrently": "^3.1.0",
+    "lite-server": "^2.2.2"
+  },
+  "engine": "node >= 6.3.0",
+  "description": "An API to support Scott Service's proprietary app."
+}
